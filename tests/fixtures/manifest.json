@@ -1,0 +1,29 @@
+{
+  "type": "synthetic_tts_not_user_microphone",
+  "voice": "macOS Tingting",
+  "sample_rate": 16000,
+  "sentences": [
+    "今天下午三点提醒我开会。",
+    "请把这段文字改得简洁一点，保留原来的意思。",
+    "我正在用手写笔选择屏幕上的内容，然后通过语音输入修改意见。"
+  ],
+  "additional_fixtures": [
+    {
+      "file": "en-0.pcm",
+      "voice": "Samantha",
+      "text": "Please change this button to blue and keep the original layout."
+    },
+    {
+      "file": "mixed-0.pcm",
+      "voice": "Tingting",
+      "text": "请把这个 button 改成蓝色，然后保存到 Windows。"
+    }
+  ],
+  "checks": [
+    "draft arrives before final",
+    "pause finalization",
+    "stop flush",
+    "two phrase boundaries",
+    "silence has no final"
+  ]
+}

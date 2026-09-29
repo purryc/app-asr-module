@@ -1,0 +1,13 @@
+build/
+.cache/
+.deps/
+qa/
+models/assets/
+local.properties
+*.keystore
+*.jks
+.env
+.env.*
+.DS_Store
+__pycache__/
+*.pyc

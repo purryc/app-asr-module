@@ -1,0 +1,144 @@
+{
+  "version": "0.1.0",
+  "date": "2026-09-29",
+  "device_model": "Lenovo TB321FU",
+  "android_version": 15,
+  "input": "synthetic fixture audio, not user speech",
+  "model_init_ms": 2373,
+  "results": [
+    {
+      "fixture": "zh-0",
+      "audio_seconds": 2.733562469482422,
+      "first_partial_audio_ms": 416,
+      "partial_changes": 7,
+      "total_compute_ms": 182,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "今天下午三点提醒我开会",
+          "final": "今天下午3点提醒我开会。",
+          "final_ms": 75
+        }
+      ]
+    },
+    {
+      "fixture": "zh-1",
+      "audio_seconds": 4.3589372634887695,
+      "first_partial_audio_ms": 736,
+      "partial_changes": 11,
+      "total_compute_ms": 236,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "请把这段文字改的简洁一点保留原来的意思",
+          "final": "请把这段文字改的简洁一点，保留原来的意思。",
+          "final_ms": 87
+        }
+      ]
+    },
+    {
+      "fixture": "zh-2",
+      "audio_seconds": 6.401000022888184,
+      "first_partial_audio_ms": 416,
+      "partial_changes": 18,
+      "total_compute_ms": 339,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "我正在用手写笔选择屏幕上的内容然后通过语音输入修改意见",
+          "final": "我正在用手写笔选择屏幕上的内容，然后通过语音输入修改意见。",
+          "final_ms": 127
+        }
+      ]
+    },
+    {
+      "fixture": "en-0",
+      "audio_seconds": 3.063124895095825,
+      "first_partial_audio_ms": 1056,
+      "partial_changes": 8,
+      "total_compute_ms": 183,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "CHANGE THIS BUTTON TO BLUE AND KEEP THE ORIGINAL LAYOUT",
+          "final": "Please change this button to blue and keep the original layout.",
+          "final_ms": 66
+        }
+      ]
+    },
+    {
+      "fixture": "mixed-0",
+      "audio_seconds": 4.440187454223633,
+      "first_partial_audio_ms": 736,
+      "partial_changes": 13,
+      "total_compute_ms": 239,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "请把这个标签改成蓝色然后保存到 WINDOWS",
+          "final": "请把这个button改成蓝色，然后保存到windows。",
+          "final_ms": 87
+        }
+      ]
+    },
+    {
+      "fixture": "stop_flush",
+      "audio_seconds": 3.063124895095825,
+      "first_partial_audio_ms": 1056,
+      "partial_changes": 8,
+      "total_compute_ms": 155,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "CHANGE THIS BUTTON TO BLUE AND KEEP THE ORIGINAL LAYOUT",
+          "final": "Please change this button to blue and keep the original layout.",
+          "final_ms": 67
+        }
+      ]
+    },
+    {
+      "fixture": "two_phrases",
+      "audio_seconds": 6.996687412261963,
+      "first_partial_audio_ms": 416,
+      "partial_changes": 17,
+      "total_compute_ms": 340,
+      "phrases": [
+        {
+          "id": 0,
+          "draft": "今天下午三点提醒我开会",
+          "final": "今天下午3点提醒我开会。",
+          "final_ms": 60
+        },
+        {
+          "id": 1,
+          "draft": "PLEASE CHANGE THIS BUTTON TO BLUE AND KEEP THE ORIGINAL LAYOUT",
+          "final": "Please change this button to blue and keep the original layout.",
+          "final_ms": 65
+        }
+      ]
+    },
+    {
+      "fixture": "silence",
+      "audio_seconds": 3,
+      "first_partial_audio_ms": 0,
+      "partial_changes": 0,
+      "total_compute_ms": 83,
+      "phrases": []
+    }
+  ],
+  "lifecycle": "cancel-during-prepare, suppress stale callbacks, idempotent close, release models/executors, terminal error regression passed",
+  "artifacts": {
+    "app-pen-debug.apk": {
+      "bytes": 20823,
+      "sha256": "a4cbef9faaf3b8938c77fbd43274b43b02d13b668a2e6bc6a6212e4d097690bd"
+    },
+    "app-asr-debug.apk": {
+      "bytes": 227538664,
+      "sha256": "e76501ca2797b28f913446aad67746e726e141e4e6e939f8d271c97fc0e222ec"
+    },
+    "app-combined-debug.apk": {
+      "bytes": 227546856,
+      "sha256": "3ced58d304ac79b92a9b4a3ec4ca2acdf36fa50e1ee0ed42357bd7ce1e4cfd00"
+    }
+  }
+}

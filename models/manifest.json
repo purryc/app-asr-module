@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "sample_rate": 16000,
+  "channels": 1,
+  "language": "auto",
+  "runtime_version": "1.13.8",
+  "artifacts": [
+    {
+      "id": "runtime",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.8/sherpa-onnx-1.13.8.aar",
+      "download": "sherpa-onnx-1.13.8.aar",
+      "sha256": "633c24321e06b1fe79feafa03ea16cbc0f8a286641e2da3559bac91bdb13bd96",
+      "kind": "copy",
+      "files": [
+        {
+          "source": "",
+          "target": ".deps/sherpa-onnx-1.13.8.aar",
+          "sha256": "633c24321e06b1fe79feafa03ea16cbc0f8a286641e2da3559bac91bdb13bd96"
+        }
+      ]
+    },
+    {
+      "id": "kotlin",
+      "url": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/2.2.0/kotlin-stdlib-2.2.0.jar",
+      "download": "kotlin-stdlib-2.2.0.jar",
+      "sha256": "65d12d85a3b865c160db9147851712a64b10dadd68b22eea22a95bf8a8670dca",
+      "kind": "copy",
+      "files": [
+        {
+          "source": "",
+          "target": ".deps/kotlin-stdlib-2.2.0.jar",
+          "sha256": "65d12d85a3b865c160db9147851712a64b10dadd68b22eea22a95bf8a8670dca"
+        }
+      ]
+    },
+    {
+      "id": "sensevoice",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+      "download": "sensevoice-int8.tar.bz2",
+      "sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+      "kind": "tar",
+      "files": [
+        {
+          "source": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17/model.int8.onnx",
+          "target": "models/assets/sensevoice/model.int8.onnx",
+          "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51"
+        },
+        {
+          "source": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17/tokens.txt",
+          "target": "models/assets/sensevoice/tokens.txt",
+          "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
+        }
+      ]
+    },
+    {
+      "id": "zipformer",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16.tar.bz2",
+      "download": "zipformer-small.tar.bz2",
+      "sha256": "2b7c63322b32e5e0f2526043a1103366119ca58dd615cd7105a37c01db9553d7",
+      "kind": "tar",
+      "files": [
+        {
+          "source": "sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16/encoder-epoch-99-avg-1.int8.onnx",
+          "target": "models/assets/zipformer/encoder.int8.onnx",
+          "sha256": "db6f51551762e40e549166fe041ea3e45464370b595e9ad23f06478ec3794fbb"
+        },
+        {
+          "source": "sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16/decoder-epoch-99-avg-1.onnx",
+          "target": "models/assets/zipformer/decoder.onnx",
+          "sha256": "89be509a83175261695bdef5fd1c7b9ab1129a663d1284e7ba9f8507b21e0906"
+        },
+        {
+          "source": "sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16/joiner-epoch-99-avg-1.int8.onnx",
+          "target": "models/assets/zipformer/joiner.int8.onnx",
+          "sha256": "bdda356d6f9b8c2d7cee9ee0e26075fa537490f7fd06520be408d287073667b9"
+        },
+        {
+          "source": "sherpa-onnx-streaming-zipformer-small-bilingual-zh-en-2023-02-16/tokens.txt",
+          "target": "models/assets/zipformer/tokens.txt",
+          "sha256": "a8e0e4ec53810e433789b54a5c0134a7eaa2ffca595a6334d54c00da858841d3"
+        }
+      ]
+    },
+    {
+      "id": "vad",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+      "download": "silero_vad.onnx",
+      "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6",
+      "kind": "copy",
+      "files": [
+        {
+          "source": "",
+          "target": "models/assets/sensevoice/silero_vad.onnx",
+          "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6"
+        }
+      ]
+    }
+  ]
+}
